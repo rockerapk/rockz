@@ -1,5 +1,5 @@
 {
-  "name": "rockz",
+  "name": "rockz-chat",
   "version": "1.0.0",
   "description": "Real-time chat and calling app",
   "main": "server/index.js",
@@ -11,6 +11,6 @@
     "socket.io": "^4.6.1",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.0",
-    "sql.js": "^1.10.2"
+    "@supabase/supabase-js": "^2.39.0"
   }
 }

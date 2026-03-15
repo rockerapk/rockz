@@ -1,0 +1,21 @@
+{
+  "install": "npm install",
+  "start": "node server/index.js",
+  "watch": {
+    "ignore": [
+      "\\.git",
+      "node_modules"
+    ],
+    "install": {
+      "include": [
+        "^package\\.json$"
+      ]
+    },
+    "restart": {
+      "include": [
+        "^server/",
+        "\\.env"
+      ]
+    }
+  }
+}
