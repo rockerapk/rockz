@@ -1,0 +1,25 @@
+app: rockz-chat
+services:
+  - name: rockz
+    type: web
+    instance_type: free
+    regions:
+      - was
+    git:
+      repository: github.com/YOURUSERNAME/rockz
+      branch: main
+      buildpack: nodejs
+    ports:
+      - port: 3000
+        protocol: http
+    routes:
+      - path: /
+        port: 3000
+    env:
+      - key: PORT
+        value: "3000"
+    health_checks:
+      - path: /
+        port: 3000
+        interval: 30
+        timeout: 5
